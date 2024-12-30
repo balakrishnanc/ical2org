@@ -452,7 +452,11 @@ BEGIN {
 
             # output original entry if requested by 'original' config option
             if (original)
+            {
                 print "** COMMENT original iCal entry\n", gensub("\r", "", "g", icalentry)
+                print ""
+                print ""
+            }
         }
         UIDS[id] = 1;
     }
